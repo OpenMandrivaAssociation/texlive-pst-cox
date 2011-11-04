@@ -68,6 +68,7 @@ is devoted to the infinite series.
 %doc %{_texmfdistdir}/doc/generic/pst-cox/pst-coxeterp/Gallery.tex
 %doc %{_texmfdistdir}/doc/generic/pst-cox/pst-coxeterp/pst-coxeterp_doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-cox/pst-coxeterp/pst-coxeterp_doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -78,3 +79,5 @@ is devoted to the infinite series.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
