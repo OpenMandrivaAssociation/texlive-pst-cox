@@ -69,3 +69,17 @@ is devoted to the infinite series.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.98Beta-2
++ Revision: 755229
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.98Beta-1
++ Revision: 719341
+- texlive-pst-cox
+- texlive-pst-cox
+- texlive-pst-cox
+- texlive-pst-cox
+
