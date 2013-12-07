@@ -6,7 +6,7 @@
 # catalog-version 0.98 Beta
 Name:		texlive-pst-cox
 Version:	0.98Beta
-Release:	5
+Release:	6
 Summary:	Drawing regular complex polytopes with PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-cox
