@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-cox
-# catalog-date 2008-08-23 00:25:16 +0200
-# catalog-license lgpl
-# catalog-version 0.98 Beta
 Name:		texlive-pst-cox
-Version:	0.98
-Release:	2
+Version:	15878
+Release:	1
 Summary:	Drawing regular complex polytopes with PSTricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-cox
 License:	LGPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -36,12 +30,12 @@ coordinates have been pre-computed. The second, pst-coxeterp,
 is devoted to the infinite series.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -62,24 +56,10 @@ is devoted to the infinite series.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.98Beta-2
-+ Revision: 755229
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.98Beta-1
-+ Revision: 719341
-- texlive-pst-cox
-- texlive-pst-cox
-- texlive-pst-cox
-- texlive-pst-cox
-
