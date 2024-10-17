@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Drawing regular complex polytopes with PSTricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-cox
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-cox
 License:	LGPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-cox.doc.r%{version}.tar.xz
